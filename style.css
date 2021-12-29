@@ -1,0 +1,533 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    overflow: auto;
+}
+header{
+    top: 0;
+    background-color: #e9e8e6;
+    color: black;
+    font-size: 14px;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+}
+
+.header_left{
+    margin: 10px;
+    align-items: left;
+    text-align: left;
+    border-top-width: 0px;
+    border-top-style: solid;
+    border-left-style: solid;
+    border-left-width: 0px;
+  
+}
+.header_left h1{
+    border-top-width: 0px;
+    border-top-style: solid;
+    border-left-style: solid;
+    border-left-width: 0px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    height: 50px;
+    width: 100%;
+}
+.nav {
+    text-align: right;
+    height: 30px;
+}
+
+
+.header_right{
+    margin: 0 30px 0 0;
+    background-color: #e9e8e6;
+    width: 100%;
+
+}
+.header_right ul{
+    margin-top: -60px;
+    margin-left: 900px;
+    list-style-type: none;
+    display: flex;
+}
+
+.header_right a{
+    clear: right;
+    text-decoration: none;
+    color: gray;
+    margin: 0 0px;
+    line-height: 20px;
+}
+.header_right li{
+    margin-right: 10px;
+}
+
+.nav-toggle-label{
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+    width: 26px;
+    float: right;
+}
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    display: block;
+    background: red;
+    height: 2px;
+    width: 20px;
+    border-radius: 2px;
+    position: relative;
+}
+.nav-toggle-label span::before,
+.nav-toggle-label span::after{
+    content: '';
+    position: absolute;
+}
+.nav-toggle-label span::before{
+    bottom: 10px;
+}
+.nav-toggle-label span::after{
+    top: 10px;
+}
+#nav-toggle {
+    display: none;
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    width: 26px;
+    float: right;   
+}
+
+a:link,
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+a:hover {
+    color: green;
+    text-decoration: underline;
+} 
+@media only screen and (max-width: 500px) {
+    .nav-toggle-label {
+        display: block;
+        cursor: pointer;
+    }
+    .header_right {
+        width: 100%;
+        display: none;
+    }
+    .header_right a {
+        display: block;
+        margin: 0;
+    }
+    .nav-toggle:checked + .header_right {
+        display: block;
+    }
+}
+.main{
+    background-image: url("images/bgimage.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    font-family: 'Times New Roman', Times, serif;
+    width: 100%;
+    height: 1000px;    
+}
+
+.content{
+    background-color: white;
+    padding: 40px;
+    margin-right: 80px;
+    margin-left: 400px;
+    margin-top: 450px;
+    margin-bottom: 40px;
+    width: 700px;
+    height: 200px;
+}
+.content p{
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-right: 20px;
+}
+#aboutme {
+    background-color: grey;
+    width: 100px;
+    border-radius: 25px;
+}
+.about-container{
+    width: 100%;
+    height: 1200px;
+}
+.about-wrapper {
+    width: 100%;
+    height: 1000pxs;
+    column-count: 2;
+}
+
+#image {
+    align-items: center;
+    padding-left: 350px;
+    padding-top: 50px;
+    height: 800px;
+    width: 80%;
+}
+
+.about-title{
+    width: 100%;
+    height: 100px;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    margin-left: 800px;
+    margin-right: 300px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+    align-items: center;
+}
+.about-title p{
+    margin-right: 30px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: -250px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+   
+}
+.wrapper_right{
+    width: 100%;
+    height: 1000px;
+    display: block;
+}
+.personal-details{
+    padding-top: 50px;
+    padding-bottom: 10px;
+    height: 300px;
+    width: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    font-weight: 500;
+
+}
+.personal-details h1{
+    padding-bottom: 10px;
+    padding-top:20px;
+    margin-top: 100px;
+    margin-left: -50px;
+    margin-bottom: 10px;
+    margin-right: -70px;
+} 
+.personal-details ol{
+    list-style-type: circle;
+}
+hr{
+    margin-right: -50px;
+    margin-bottom: 10px;
+    margin-top: 150px;
+    margin-left: -50px;
+    margin-bottom: 10px;
+    margin-top: 150px;
+    width: 95%;
+}
+
+.soft-skills{
+
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 40px;
+    margin-left: 0px;
+    margin-bottom: 40px;
+    margin-top: 0px;
+    margin-right: 20px;
+    padding-left: 0px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    width: 100%;
+    height: 400px;
+}
+.soft-skills h1{
+    margin-left: -50px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding-top: 20px;
+    padding-left: 0px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+}
+
+.hire-btn{
+    border-top: 10px;
+    border-bottom : 10px;
+    margin-right: 20px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding-top: 20px;
+    padding-left: 0px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+}
+
+.hire-btn li{
+    font-size: 25px;
+    color: white;
+    padding: 20px;
+    width: 20%;
+}
+
+.resume{
+    margin-top: 250px;
+    padding-bottom: 20px;
+    text-align: center; 
+    position: relative; 
+    width: 50%;
+    height: 40px;
+    margin-left: 400px;
+    padding-right: 0px;
+    margin-right: 100px;        
+}
+.resume h1{
+    align-items: center;
+    width: 100%;
+    height: 30px;
+    margin-top: 100px;
+}
+.resume p{
+    text-align: center;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.resume-wrapper{
+    width: 1200px;
+    height: 900px;
+    margin-left: 200px;
+}
+.restitle{
+    margin-left: -200px;
+}
+.summaryul hr{
+    width: 800px;
+    margin-left: 250px;
+}
+.summary{
+    font-size: 16px;
+    text-align: center;
+    margin-left: 350px;
+    width: 700px;
+    height: 400px;
+    padding-top: 80px;  
+    padding-bottom: 20px;
+    margin-right: 20px;
+    margin-left: 320px;  
+}
+.sumtitle{
+    margin-left: -200px;
+    font-size: 18px;
+}
+.summaryul li{
+    list-style-type: disc;
+    padding-right: 200px;
+}
+.education{
+    font-size: 16px;
+    text-align: center;
+    width: 700px;
+    height: 400px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    margin-right: 20px;
+    margin-left: 320px; 
+}
+.edtitle{
+    margin-left: -200px;
+    font-size: 18px;
+}
+
+.contact-main{
+    width: 100%;
+    height: 600px;
+}
+.heading{
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-align: center;
+    margin-left: 600px;
+}
+.heading h1{
+    margin-top: 100px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 400px;
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+}
+.heading p{
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 150;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 400px;
+}
+.map{
+    margin-left: 500px;
+    transition: 400ms ease-in;
+}
+.contact-wrapper{
+    width: 100%;
+    height: 800px;
+    column-count: 2;
+}
+.contact{
+    margin-left: 500px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+    margin-top: 70px;
+    width: 760px;
+    height: 400px;
+    padding-top: 50px;
+    padding-bottom: 40px;   
+    padding-left: 20px;
+    padding-right: 500px;
+}
+.heading{
+    margin-top: 120px;
+
+}
+.location{
+    width: 50px;
+    height: 50px;
+    padding-bottom: 10px;
+
+}
+.email{
+    width: 50px;
+    height: 50px;
+    padding-bottom: 10px;
+
+}
+.call{
+    width: 50px;
+    height: 50px;
+    padding-bottom: 10px;
+
+}
+p{
+    padding-bottom: 20px;
+}
+.message{
+    width: 760px;
+    height: 400px;
+    font-size: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 100px;
+    margin-bottom: 50px;
+    margin-top: 100px;
+    margin-right: 100px;
+    padding-left: 30px;
+    padding-top: 100px;
+    padding-right: 150px;
+    padding-bottom: 10px;
+    
+}
+.name{
+    width: 250px;
+    height: 30px;
+    padding-left: 20px;
+    margin-left: -150px;
+    margin-right: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+}
+.emailaddress{
+    height: 30px;
+    width: 250px;
+    margin-left: -50px;
+    margin-bottom: 20px;
+    margin-right: 50px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.subject{
+    width: 520px;
+    height: 20px;
+    margin-left: -150px;
+    margin-bottom: 20px;
+    margin-right: 50px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+#desc{
+    margin-bottom: 20px;
+    margin-left: -150px;
+    margin-right: 50px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+
+}
+.submit{
+    background-color: lightgreen;
+    border-radius: 15px;
+    margin-left: 200px;
+    margin-right: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+strong {
+    color: green;
+}
+
+footer {
+    background: #e9e8e6;
+    padding: 10px 10px;
+    color: #222222;
+    font-size: 14px;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
